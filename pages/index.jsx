@@ -1,10 +1,14 @@
 
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import styles from "../componentes/Footer"
+import Header from "../componentes/Header"
+import Footer from '../componentes/Footer'
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Header/>
       <Head>
         <title>Next.js Do Zero</title>
         <link rel="icon" href="/favicon.ico" />
@@ -51,7 +55,7 @@ export default function Home() {
         </div>
       </main>
 
-
+      <Footer/>
 
       <footer className={styles.footer}>
         <a
@@ -64,5 +68,7 @@ export default function Home() {
         </a>
       </footer>
     </div>
+
+    
   )
 }   
